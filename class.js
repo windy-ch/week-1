@@ -11,7 +11,28 @@
  *    - die           = merubah isDangerous menjadi false
  */
 
-
+class Tiger {
+  constructor (name, height, weight){
+  this.name = Tiger;
+  this.height = 100cm;
+  this.weight = 100kg;
+  this.energy = 100
+    }
+  
+ isDangerous = true;
+  
+  die () {
+    this.isDangerous = false;
+  }
+  
+  roar () {
+    this.roar = Roarrrrr;
+  }
+  
+}
+ 
+  
+  
 /**
  * 2. Buatlah class dengan nama Cat yang mana adalah child dari class Tiger (extent Tiger)
  *  attributes:
@@ -24,3 +45,15 @@
  *    - roar          = mengeluarkan output/return "Meoww"
  *    - die           = merubah isDangerous menjadi false
  */
+
+ class Cat extends Tiger {
+  constructor (name, height, weight){
+    super (name, height, weight);
+    }
+  
+
+  const Cat = new Tiger('cat', '100cm', '100kg', '10');
+  
+  const roar = new roar (Meoww);
+
+}
